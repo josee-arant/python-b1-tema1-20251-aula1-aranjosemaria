@@ -40,8 +40,31 @@ Exemple:
 '''
 
 def fibonacci(fibonacci_number):
-    # Write here your code
-    pass
+ # Write here your code
+
+    #1. We check if it is a valid number:
+    if type(fibonacci_number) != int:
+        raise ValueError("The number must be an integer.")
+    if fibonacci_number < 0:
+        raise ValueError("The number must be greater than or equal to 0.")
+
+    #2. Base cases:
+    if fibonacci_number == 0:
+        return 0
+    if fibonacci_number == 1:
+        return 1
+    
+    #3. Other cases:
+    a = 0
+    b = 1
+
+    for i in range(2, fibonacci_number +1):
+        c = a + b
+        a = b
+        b = c
+
+    return c
+
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
