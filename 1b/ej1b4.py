@@ -66,17 +66,17 @@ import numpy as np
 
 def results(list_numbers):
   
-# Calculate
+    # Calculate
     average= np.mean(list_numbers)
 
     standard_deviation= np.std(list_numbers)
 
-#Rounded
+    #Rounded
     rounded_average = round(average, 2)  
 
     rounded_standard_deviation = round(standard_deviation, 2)
 
-# Print and return   
+    # Print and return   
     print(f"Average: {rounded_average}")
     print(f"Standard deviation: {rounded_standard_deviation}")
 

@@ -54,16 +54,8 @@ def fibonacci(fibonacci_number):
     if fibonacci_number == 1:
         return 1
     
-    #3. Other cases:
-    a = 0
-    b = 1
-
-    for i in range(2, fibonacci_number +1):
-        c = a + b
-        a = b
-        b = c
-
-    return c
+    #3. Recursive step:
+    return fibonacci(fibonacci_number - 1) + fibonacci(fibonacci_number - 2)
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
