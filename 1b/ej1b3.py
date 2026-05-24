@@ -51,8 +51,24 @@ import matplotlib.pyplot as plt
 # Esta función deberá configurar la gráfica en la variable plt
 # Aquesta funció haurà de configurar la gràfica en la variable plt
 def line_graph(x, y):
-    # Write here your code
-    pass
+ 
+    plt.plot(x, y)
+
+    plt.title(
+        label= "Graph"
+    )
+
+    plt.xlabel(
+        xlabel= "Axis X"
+    )
+
+    plt.ylabel(
+        ylabel= "Axis Y"
+    )
+    
+    plt.grid(
+        visible= True
+    )
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
